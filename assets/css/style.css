@@ -29,8 +29,10 @@ header nav ul li {
 }
 
 .video-banner {
-    max-width: 100%;
-    max-height: 50%;
+    position: relative;
+    height: 20vw;
+    width: 100%;
+    object-fit: cover;
 }
 
 main {
@@ -40,65 +42,89 @@ main {
 main section {
     display: flex;
     margin: 10px;
+    width: 100%;
 }
 
 main section h3 {
-    padding: 40px;
-    text-align: end;
+    padding: 50px;
+    text-align: center;
     width: 20px;
     color: #e4a4fa;
+    border-right: 3px solid white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
+    width: 200px; 
+    float: left;
 }
 
 main section p {
-    padding: 40px;
+    padding: 35px;
     margin: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     color: #00ffff;
-    float: right;
 }
 
-
-
-
-
-
-
-
-
-
-/* .about-me h3, .creative-projects h3 {
-    justify-content: flex-end;
-    padding: 10px;
-    margin: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    color: #00ffff;
-    text-align: left;
-}
-
-footer h3 {
-    justify-content: flex-end;
-    padding: 10px;
+main section ul li {
+    padding: 75px;
     margin: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    color: #00ffff;
-    text-align: left;
-    
-} */
-
-/* footer ul li {
-    justify-content: center;
-    flex-direction: row;
-    padding: 10px;
-    margin: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    color: aqua;
-    text-align: center;
-    float: right;
+    font-size: 20px;
+    color: #e4a4fa;
     list-style: none;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 2em;
+    row-gap: 1em;
+    width: 100%;
+    
+}
+
+.image-1 {
+    width: 750px;
+    max-height: 250px;
+    border-style: groove;
+    border-color: #e4a4fa;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.image {
+    width: 400px;
+    max-height: 300px;
+    border-style: groove;
+    border-color: #e4a4fa;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00ffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.hover {
+    color: #e4a4fa;
+    background-color: transparent;
+    text-decoration: none;  
+}
+
+/* @media screen (max-width: 400px) {
+    .main section h3 {
+        float: left;
+    } main section p {
+        font-size: small;
+    }
 } */
